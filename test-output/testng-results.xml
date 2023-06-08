@@ -1,316 +1,159 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="15" passed="13" failed="1" skipped="1">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-08T11:15:00 IST" name="Default suite" finished-at="2023-06-08T11:15:43 IST" duration-ms="43398">
+  <suite started-at="2023-06-08T13:38:11 IST" name="CGM_TestNG_Suite" finished-at="2023-06-08T13:38:33 IST" duration-ms="22018">
     <groups>
     </groups>
-    <test started-at="2023-06-08T11:15:00 IST" name="Default test" finished-at="2023-06-08T11:15:43 IST" duration-ms="43398">
+    <test started-at="2023-06-08T13:38:11 IST" name="CGM_API_Test" finished-at="2023-06-08T13:38:33 IST" duration-ms="22018">
       <class name="api.demo.tests.ExtentReport_PetTest">
-        <test-method is-config="true" signature="startReport()[pri:0, instance:api.demo.tests.ExtentReport_PetTest@71687585]" started-at="2023-06-08T11:15:00 IST" name="startReport" finished-at="2023-06-08T11:15:00 IST" duration-ms="28" status="PASS">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:api.demo.tests.ExtentReport_PetTest@42bc14c1]" started-at="2023-06-08T13:38:13 IST" name="startReport" finished-at="2023-06-08T13:38:13 IST" duration-ms="58" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:api.demo.tests.ExtentReport_PetTest@71687585]" started-at="2023-06-08T11:15:21 IST" name="setup" finished-at="2023-06-08T11:15:21 IST" duration-ms="8" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:api.demo.tests.ExtentReport_PetTest@42bc14c1]" started-at="2023-06-08T13:38:25 IST" name="setup" finished-at="2023-06-08T13:38:25 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TestPostPet()[pri:0, instance:api.demo.tests.ExtentReport_PetTest@71687585]" started-at="2023-06-08T11:15:21 IST" name="TestPostPet" finished-at="2023-06-08T11:15:23 IST" duration-ms="1729" status="PASS">
+        <test-method signature="TestPostPet()[pri:0, instance:api.demo.tests.ExtentReport_PetTest@42bc14c1]" started-at="2023-06-08T13:38:25 IST" name="TestPostPet" finished-at="2023-06-08T13:38:27 IST" duration-ms="1514" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestPostPet -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:api.demo.tests.ExtentReport_PetTest@71687585]" started-at="2023-06-08T11:15:23 IST" name="tearDown" finished-at="2023-06-08T11:15:23 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:api.demo.tests.ExtentReport_PetTest@42bc14c1]" started-at="2023-06-08T13:38:27 IST" name="tearDown" finished-at="2023-06-08T13:38:27 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TestPostPet status=SUCCESS method=ExtentReport_PetTest.TestPostPet()[pri:0, instance:api.demo.tests.ExtentReport_PetTest@71687585] output={null}]]]>
+                <![CDATA[[TestResult name=TestPostPet status=SUCCESS method=ExtentReport_PetTest.TestPostPet()[pri:0, instance:api.demo.tests.ExtentReport_PetTest@42bc14c1] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="TestGetpet()[pri:1, instance:api.demo.tests.ExtentReport_PetTest@71687585]" started-at="2023-06-08T11:15:23 IST" name="TestGetpet" finished-at="2023-06-08T11:15:25 IST" duration-ms="1724" status="PASS">
+        <test-method signature="TestGetpet()[pri:1, instance:api.demo.tests.ExtentReport_PetTest@42bc14c1]" started-at="2023-06-08T13:38:27 IST" name="TestGetpet" finished-at="2023-06-08T13:38:28 IST" duration-ms="1424" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestGetpet -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:api.demo.tests.ExtentReport_PetTest@71687585]" started-at="2023-06-08T11:15:25 IST" name="tearDown" finished-at="2023-06-08T11:15:25 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:api.demo.tests.ExtentReport_PetTest@42bc14c1]" started-at="2023-06-08T13:38:28 IST" name="tearDown" finished-at="2023-06-08T13:38:28 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TestGetpet status=SUCCESS method=ExtentReport_PetTest.TestGetpet()[pri:1, instance:api.demo.tests.ExtentReport_PetTest@71687585] output={null}]]]>
+                <![CDATA[[TestResult name=TestGetpet status=SUCCESS method=ExtentReport_PetTest.TestGetpet()[pri:1, instance:api.demo.tests.ExtentReport_PetTest@42bc14c1] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="TestPutPet()[pri:2, instance:api.demo.tests.ExtentReport_PetTest@71687585]" started-at="2023-06-08T11:15:25 IST" name="TestPutPet" finished-at="2023-06-08T11:15:29 IST" duration-ms="3887" status="PASS">
+        <test-method signature="TestPutPet()[pri:2, instance:api.demo.tests.ExtentReport_PetTest@42bc14c1]" started-at="2023-06-08T13:38:28 IST" name="TestPutPet" finished-at="2023-06-08T13:38:31 IST" duration-ms="2979" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestPutPet -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:api.demo.tests.ExtentReport_PetTest@71687585]" started-at="2023-06-08T11:15:29 IST" name="tearDown" finished-at="2023-06-08T11:15:29 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:api.demo.tests.ExtentReport_PetTest@42bc14c1]" started-at="2023-06-08T13:38:31 IST" name="tearDown" finished-at="2023-06-08T13:38:31 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TestPutPet status=SUCCESS method=ExtentReport_PetTest.TestPutPet()[pri:2, instance:api.demo.tests.ExtentReport_PetTest@71687585] output={null}]]]>
+                <![CDATA[[TestResult name=TestPutPet status=SUCCESS method=ExtentReport_PetTest.TestPutPet()[pri:2, instance:api.demo.tests.ExtentReport_PetTest@42bc14c1] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="TestDeletePet()[pri:3, instance:api.demo.tests.ExtentReport_PetTest@71687585]" started-at="2023-06-08T11:15:29 IST" name="TestDeletePet" finished-at="2023-06-08T11:15:30 IST" duration-ms="1834" status="PASS">
+        <test-method signature="TestDeletePet()[pri:3, instance:api.demo.tests.ExtentReport_PetTest@42bc14c1]" started-at="2023-06-08T13:38:31 IST" name="TestDeletePet" finished-at="2023-06-08T13:38:33 IST" duration-ms="1487" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestDeletePet -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:api.demo.tests.ExtentReport_PetTest@71687585]" started-at="2023-06-08T11:15:30 IST" name="tearDown" finished-at="2023-06-08T11:15:30 IST" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:api.demo.tests.ExtentReport_PetTest@42bc14c1]" started-at="2023-06-08T13:38:33 IST" name="tearDown" finished-at="2023-06-08T13:38:33 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TestDeletePet status=SUCCESS method=ExtentReport_PetTest.TestDeletePet()[pri:3, instance:api.demo.tests.ExtentReport_PetTest@71687585] output={null}]]]>
+                <![CDATA[[TestResult name=TestDeletePet status=SUCCESS method=ExtentReport_PetTest.TestDeletePet()[pri:3, instance:api.demo.tests.ExtentReport_PetTest@42bc14c1] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:api.demo.tests.ExtentReport_PetTest@71687585]" started-at="2023-06-08T11:15:42 IST" name="endReport" finished-at="2023-06-08T11:15:42 IST" duration-ms="149" status="PASS">
+        <test-method is-config="true" signature="endReport()[pri:0, instance:api.demo.tests.ExtentReport_PetTest@42bc14c1]" started-at="2023-06-08T13:38:33 IST" name="endReport" finished-at="2023-06-08T13:38:33 IST" duration-ms="400" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
       </class> <!-- api.demo.tests.ExtentReport_PetTest -->
-      <class name="api.utils.ExtentReport">
-        <test-method is-config="true" signature="startReport()[pri:0, instance:api.utils.ExtentReport@738dc9b]" started-at="2023-06-08T11:15:00 IST" name="startReport" finished-at="2023-06-08T11:15:00 IST" duration-ms="571" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startReport -->
-        <test-method signature="failTest()[pri:0, instance:api.utils.ExtentReport@738dc9b]" started-at="2023-06-08T11:15:01 IST" name="failTest" finished-at="2023-06-08T11:15:01 IST" duration-ms="24" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertTrue(Assert.java:45)
-at org.testng.Assert.assertTrue(Assert.java:55)
-at api.utils.ExtentReport.failTest(ExtentReport.java:51)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- failTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.utils.ExtentReport@738dc9b]" started-at="2023-06-08T11:15:01 IST" name="getResult" finished-at="2023-06-08T11:15:01 IST" duration-ms="10" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=failTest status=FAILURE method=ExtentReport.failTest()[pri:0, instance:api.utils.ExtentReport@738dc9b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method signature="passTest()[pri:0, instance:api.utils.ExtentReport@738dc9b]" started-at="2023-06-08T11:15:01 IST" name="passTest" finished-at="2023-06-08T11:15:01 IST" duration-ms="6" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- passTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.utils.ExtentReport@738dc9b]" started-at="2023-06-08T11:15:01 IST" name="getResult" finished-at="2023-06-08T11:15:01 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=passTest status=SUCCESS method=ExtentReport.passTest()[pri:0, instance:api.utils.ExtentReport@738dc9b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method signature="skipTest()[pri:0, instance:api.utils.ExtentReport@738dc9b]" started-at="2023-06-08T11:15:01 IST" name="skipTest" finished-at="2023-06-08T11:15:01 IST" duration-ms="3" status="SKIP">
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[Skipping - This is not ready for testing ]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping - This is not ready for testing 
-at api.utils.ExtentReport.skipTest(ExtentReport.java:58)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- skipTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.utils.ExtentReport@738dc9b]" started-at="2023-06-08T11:15:01 IST" name="getResult" finished-at="2023-06-08T11:15:01 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=skipTest status=SKIP method=ExtentReport.skipTest()[pri:0, instance:api.utils.ExtentReport@738dc9b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:api.utils.ExtentReport@738dc9b]" started-at="2023-06-08T11:15:42 IST" name="endReport" finished-at="2023-06-08T11:15:42 IST" duration-ms="646" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endReport -->
-      </class> <!-- api.utils.ExtentReport -->
       <class name="api.demo.tests.SparkReport_PetTest">
-        <test-method is-config="true" signature="setExtent()[pri:0, instance:api.demo.tests.SparkReport_PetTest@5c86a017]" started-at="2023-06-08T11:15:00 IST" name="setExtent" finished-at="2023-06-08T11:15:01 IST" duration-ms="268" status="PASS">
+        <test-method is-config="true" signature="setExtent()[pri:0, instance:api.demo.tests.SparkReport_PetTest@47f9738]" started-at="2023-06-08T13:38:13 IST" name="setExtent" finished-at="2023-06-08T13:38:13 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setExtent -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:api.demo.tests.SparkReport_PetTest@5c86a017]" started-at="2023-06-08T11:15:01 IST" name="setup" finished-at="2023-06-08T11:15:02 IST" duration-ms="1760" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:api.demo.tests.SparkReport_PetTest@47f9738]" started-at="2023-06-08T13:38:13 IST" name="setup" finished-at="2023-06-08T13:38:13 IST" duration-ms="353" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TestPostPet()[pri:0, instance:api.demo.tests.SparkReport_PetTest@5c86a017]" started-at="2023-06-08T11:15:02 IST" name="TestPostPet" finished-at="2023-06-08T11:15:14 IST" duration-ms="11296" status="PASS">
+        <test-method signature="TestPostPet()[pri:0, instance:api.demo.tests.SparkReport_PetTest@47f9738]" started-at="2023-06-08T13:38:13 IST" name="TestPostPet" finished-at="2023-06-08T13:38:19 IST" duration-ms="5626" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestPostPet -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:api.demo.tests.SparkReport_PetTest@5c86a017]" started-at="2023-06-08T11:15:14 IST" name="tearDown" finished-at="2023-06-08T11:15:14 IST" duration-ms="10" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:api.demo.tests.SparkReport_PetTest@47f9738]" started-at="2023-06-08T13:38:19 IST" name="tearDown" finished-at="2023-06-08T13:38:19 IST" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TestPostPet status=SUCCESS method=SparkReport_PetTest.TestPostPet()[pri:0, instance:api.demo.tests.SparkReport_PetTest@5c86a017] output={null}]]]>
+                <![CDATA[[TestResult name=TestPostPet status=SUCCESS method=SparkReport_PetTest.TestPostPet()[pri:0, instance:api.demo.tests.SparkReport_PetTest@47f9738] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="TestGetpet()[pri:1, instance:api.demo.tests.SparkReport_PetTest@5c86a017]" started-at="2023-06-08T11:15:14 IST" name="TestGetpet" finished-at="2023-06-08T11:15:16 IST" duration-ms="1840" status="PASS">
+        <test-method signature="TestGetpet()[pri:1, instance:api.demo.tests.SparkReport_PetTest@47f9738]" started-at="2023-06-08T13:38:19 IST" name="TestGetpet" finished-at="2023-06-08T13:38:20 IST" duration-ms="1456" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestGetpet -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:api.demo.tests.SparkReport_PetTest@5c86a017]" started-at="2023-06-08T11:15:16 IST" name="tearDown" finished-at="2023-06-08T11:15:16 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:api.demo.tests.SparkReport_PetTest@47f9738]" started-at="2023-06-08T13:38:20 IST" name="tearDown" finished-at="2023-06-08T13:38:20 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TestGetpet status=SUCCESS method=SparkReport_PetTest.TestGetpet()[pri:1, instance:api.demo.tests.SparkReport_PetTest@5c86a017] output={null}]]]>
+                <![CDATA[[TestResult name=TestGetpet status=SUCCESS method=SparkReport_PetTest.TestGetpet()[pri:1, instance:api.demo.tests.SparkReport_PetTest@47f9738] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="TestPutPet()[pri:2, instance:api.demo.tests.SparkReport_PetTest@5c86a017]" started-at="2023-06-08T11:15:16 IST" name="TestPutPet" finished-at="2023-06-08T11:15:19 IST" duration-ms="3675" status="PASS">
+        <test-method signature="TestPutPet()[pri:2, instance:api.demo.tests.SparkReport_PetTest@47f9738]" started-at="2023-06-08T13:38:20 IST" name="TestPutPet" finished-at="2023-06-08T13:38:24 IST" duration-ms="3383" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestPutPet -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:api.demo.tests.SparkReport_PetTest@5c86a017]" started-at="2023-06-08T11:15:19 IST" name="tearDown" finished-at="2023-06-08T11:15:19 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:api.demo.tests.SparkReport_PetTest@47f9738]" started-at="2023-06-08T13:38:24 IST" name="tearDown" finished-at="2023-06-08T13:38:24 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TestPutPet status=SUCCESS method=SparkReport_PetTest.TestPutPet()[pri:2, instance:api.demo.tests.SparkReport_PetTest@5c86a017] output={null}]]]>
+                <![CDATA[[TestResult name=TestPutPet status=SUCCESS method=SparkReport_PetTest.TestPutPet()[pri:2, instance:api.demo.tests.SparkReport_PetTest@47f9738] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="TestDeletePet()[pri:3, instance:api.demo.tests.SparkReport_PetTest@5c86a017]" started-at="2023-06-08T11:15:19 IST" name="TestDeletePet" finished-at="2023-06-08T11:15:21 IST" duration-ms="1830" status="PASS">
+        <test-method signature="TestDeletePet()[pri:3, instance:api.demo.tests.SparkReport_PetTest@47f9738]" started-at="2023-06-08T13:38:24 IST" name="TestDeletePet" finished-at="2023-06-08T13:38:25 IST" duration-ms="1514" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestDeletePet -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:api.demo.tests.SparkReport_PetTest@5c86a017]" started-at="2023-06-08T11:15:21 IST" name="tearDown" finished-at="2023-06-08T11:15:21 IST" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:api.demo.tests.SparkReport_PetTest@47f9738]" started-at="2023-06-08T13:38:25 IST" name="tearDown" finished-at="2023-06-08T13:38:25 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TestDeletePet status=SUCCESS method=SparkReport_PetTest.TestDeletePet()[pri:3, instance:api.demo.tests.SparkReport_PetTest@5c86a017] output={null}]]]>
+                <![CDATA[[TestResult name=TestDeletePet status=SUCCESS method=SparkReport_PetTest.TestDeletePet()[pri:3, instance:api.demo.tests.SparkReport_PetTest@47f9738] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:api.demo.tests.SparkReport_PetTest@5c86a017]" started-at="2023-06-08T11:15:42 IST" name="endReport" finished-at="2023-06-08T11:15:43 IST" duration-ms="636" status="PASS">
+        <test-method is-config="true" signature="endReport()[pri:0, instance:api.demo.tests.SparkReport_PetTest@47f9738]" started-at="2023-06-08T13:38:33 IST" name="endReport" finished-at="2023-06-08T13:38:33 IST" duration-ms="388" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
       </class> <!-- api.demo.tests.SparkReport_PetTest -->
-      <class name="api.demo.tests.PetTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:api.demo.tests.PetTest@1807f5a7]" started-at="2023-06-08T11:15:30 IST" name="setup" finished-at="2023-06-08T11:15:30 IST" duration-ms="46" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="TestPostPet()[pri:0, instance:api.demo.tests.PetTest@1807f5a7]" started-at="2023-06-08T11:15:30 IST" name="TestPostPet" finished-at="2023-06-08T11:15:32 IST" duration-ms="1974" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestPostPet -->
-        <test-method signature="TestGetpet()[pri:1, instance:api.demo.tests.PetTest@1807f5a7]" started-at="2023-06-08T11:15:32 IST" name="TestGetpet" finished-at="2023-06-08T11:15:36 IST" duration-ms="3166" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestGetpet -->
-        <test-method signature="TestPutPet()[pri:2, instance:api.demo.tests.PetTest@1807f5a7]" started-at="2023-06-08T11:15:36 IST" name="TestPutPet" finished-at="2023-06-08T11:15:40 IST" duration-ms="4194" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestPutPet -->
-        <test-method signature="TestDeletePet()[pri:3, instance:api.demo.tests.PetTest@1807f5a7]" started-at="2023-06-08T11:15:40 IST" name="TestDeletePet" finished-at="2023-06-08T11:15:42 IST" duration-ms="1832" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestDeletePet -->
-      </class> <!-- api.demo.tests.PetTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- CGM_API_Test -->
+  </suite> <!-- CGM_TestNG_Suite -->
 </testng-results>

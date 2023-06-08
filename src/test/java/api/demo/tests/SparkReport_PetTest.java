@@ -1,8 +1,6 @@
 package api.demo.tests;
 
 import java.io.IOException;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -19,6 +17,7 @@ import com.github.javafaker.Faker;
 import api.endpoints.PetEndPoints2;
 import api.payloads.Pet;
 import api.utils.FakerUtils;
+import api.utils.Log;
 import api.utils.RandomGen;
 import io.restassured.response.Response;
 
@@ -26,7 +25,6 @@ public class SparkReport_PetTest {
 
 	Faker faker;
 	Pet Payload;
-	public Logger logs;
 	RandomGen msr = new RandomGen();
 	FakerUtils fu = new FakerUtils();
 	public ExtentReports extent;
@@ -61,15 +59,12 @@ public class SparkReport_PetTest {
 
 		Payload.setId(msr.getRandomNumber());
 		Payload.setName(fu.getAnimalName());
-
-		logs = LogManager.getLogger(this.getClass());
-		logs.debug("Debugging...");
 	}
 
 	@Test
 	public void TestPostPet() {
 
-		logs.info("***Creating New Pets***");
+		Log.info("***Creating New Pets***");
 		test = extent.createTest("Creating pet user");
 		// ExtentTestManager.startTest("Creating pet user", "To verify that pet is able
 		// to create in system through API");
@@ -87,14 +82,14 @@ public class SparkReport_PetTest {
 
 		// Validation 2
 		Assert.assertEquals(res.header("Content-Type"), "application/json");
-		logs.info("***New Pets are Created***");
+		Log.info("***New Pets are Created***");
 		// ExtentTestManager.getTest().log(Status.INFO, "");
 	}
 
 	@Test(priority = 1)
 	public void TestGetpet() {
 
-		logs.info("***Fetching Pets Info***");
+		Log.info("***Fetching Pets Info***");
 		test = extent.createTest("Getting pet user");
 		Response res = PetEndPoints2.GetPet(this.Payload.getId());
 
@@ -102,7 +97,7 @@ public class SparkReport_PetTest {
 		System.out.println("ContentType= " + res.getContentType());
 		System.out.println("Status Code= " + res.getStatusCode());
 		System.out.println("Response Time= " + res.getTime());
-		logs.info("***Pets Info Shown***");
+		Log.info("***Pets Info Shown***");
 
 		// Validation 1
 		Assert.assertEquals(res.getStatusCode(), 200);
@@ -139,7 +134,7 @@ public class SparkReport_PetTest {
 	@Test(priority = 2)
 	public void TestPutPet() {
 
-		logs.info("***Updating Pet Info***");
+		Log.info("***Updating Pet Info***");
 		test = extent.createTest("Updating pet user");
 		Payload.setName(fu.getAnimalName());
 
@@ -152,7 +147,7 @@ public class SparkReport_PetTest {
 
 		// Validation 2
 		Assert.assertEquals(resbeforeupdate.header("Content-Type"), "application/json");
-		logs.info("***Pet Info Updated***");
+		Log.info("***Pet Info Updated***");
 
 		Response resafterupdate = PetEndPoints2.UpdatePet(Payload);
 		System.out.println("\n" + "After Update Response Body= " + resafterupdate.asPrettyString());
@@ -164,14 +159,14 @@ public class SparkReport_PetTest {
 		Assert.assertEquals(resafterupdate.getStatusCode(), 200);
 		// Validation 2
 		Assert.assertEquals(resafterupdate.header("Content-Type"), "application/json");
-		logs.info("***Pet Info Updated***");
+		Log.info("***Pet Info Updated***");
 
 	}
 
 	@Test(priority = 3)
 	public void TestDeletePet() {
 
-		logs.info("***Deleting Pet Info***");
+		Log.info("***Deleting Pet Info***");
 		test = extent.createTest("Deleting pet user");
 		Response res = PetEndPoints2.DeletePet(this.Payload.getId());
 
@@ -184,7 +179,7 @@ public class SparkReport_PetTest {
 		Assert.assertEquals(res.getStatusCode(), 200);
 		// Validation 2
 		Assert.assertEquals(res.header("Content-Type"), "application/json");
-		logs.info("***Pet Info Deleted***");
+		Log.info("***Pet Info Deleted***");
 	}
 
 	@AfterMethod

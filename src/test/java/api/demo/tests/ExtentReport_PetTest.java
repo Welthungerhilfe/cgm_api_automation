@@ -3,8 +3,6 @@ package api.demo.tests;
 import java.io.File;
 import java.io.IOException;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -17,6 +15,8 @@ import com.github.javafaker.Faker;
 import api.endpoints.PetEndPoints2;
 import api.payloads.Pet;
 import api.utils.FakerUtils;
+import api.utils.HttpStatus;
+import api.utils.Log;
 import api.utils.RandomGen;
 import io.restassured.response.Response;
 import com.relevantcodes.extentreports.ExtentReports;
@@ -27,7 +27,6 @@ public class ExtentReport_PetTest {
 
 	Faker faker;
 	Pet Payload;
-	public Logger logs;
 	RandomGen msr = new RandomGen();
 	FakerUtils fu = new FakerUtils();
 	public ExtentReports extent;
@@ -59,18 +58,13 @@ public class ExtentReport_PetTest {
 
 		Payload.setId(msr.getRandomNumber());
 		Payload.setName(fu.getAnimalName());
-
-		logs = LogManager.getLogger(this.getClass());
-		logs.debug("Debugging...");
 	}
 
 	@Test
 	public void TestPostPet() {
 
-		logs.info("***Creating New Pets***");
-		test = extent.startTest("Creating pet user");
-		// ExtentTestManager.startTest("Creating pet user", "To verify that pet is able
-		// to create in system through API");
+		Log.info("***Creating New Pets***");
+		test = extent.startTest("Creating pet user", "To verify that pet is able to create in system through API");
 		Response res = PetEndPoints2.CreatePet(Payload);
 
 		System.out.println("Post Response Body= " + res.asPrettyString());
@@ -79,31 +73,28 @@ public class ExtentReport_PetTest {
 		System.out.println("Status Code= " + res.getStatusCode());
 
 		// Validation 1
-		Assert.assertEquals(res.getStatusCode(), 200);
-		// Another way of Validation 1
-		// Assert.assertEquals(res.getStatusCode(), HttpStatus.OK_CODE_200.getCode());
+		Assert.assertEquals(res.getStatusCode(), HttpStatus.OK_CODE_200.getCode());
 
 		// Validation 2
 		Assert.assertEquals(res.header("Content-Type"), "application/json");
-		logs.info("***New Pets are Created***");
-		// ExtentTestManager.getTest().log(Status.INFO, "");
+		Log.info("***New Pets are Created***");
 	}
 
 	@Test(priority = 1)
 	public void TestGetpet() {
 
-		logs.info("***Fetching Pets Info***");
-		test = extent.startTest("Getting pet user");
+		Log.info("***Fetching Pets Info***");
+		test = extent.startTest("Getting pet user", "To verify that pet details is able to fetch from system through API");
 		Response res = PetEndPoints2.GetPet(this.Payload.getId());
 
 		System.out.println("\n" + "Get Response Body= " + res.asPrettyString());
 		System.out.println("ContentType= " + res.getContentType());
 		System.out.println("Status Code= " + res.getStatusCode());
 		System.out.println("Response Time= " + res.getTime());
-		logs.info("***Pets Info Shown***");
+		Log.info("***Pets Info Shown***");
 
 		// Validation 1
-		Assert.assertEquals(res.getStatusCode(), 200);
+		Assert.assertEquals(res.getStatusCode(), HttpStatus.OK_CODE_200.getCode());
 
 		// Validation 2
 		Assert.assertEquals(res.header("Content-Type"), "application/json");
@@ -137,8 +128,8 @@ public class ExtentReport_PetTest {
 	@Test(priority = 2)
 	public void TestPutPet() {
 
-		logs.info("***Updating Pet Info***");
-		test = extent.startTest("Updating pet user");
+		Log.info("***Updating Pet Info***");
+		test = extent.startTest("Updating pet user", "To verify that pet is able to update in system through API");
 		Payload.setName(fu.getAnimalName());
 
 		Response resbeforeupdate = PetEndPoints2.GetPet(this.Payload.getId());
@@ -146,11 +137,10 @@ public class ExtentReport_PetTest {
 		System.out.println("\n" + "Before Update Response Body= " + resbeforeupdate.asPrettyString());
 
 		// Validation 1
-		Assert.assertEquals(resbeforeupdate.getStatusCode(), 200);
-
+		Assert.assertEquals(resbeforeupdate.getStatusCode(), HttpStatus.OK_CODE_200.getCode());
 		// Validation 2
 		Assert.assertEquals(resbeforeupdate.header("Content-Type"), "application/json");
-		logs.info("***Pet Info Updated***");
+		Log.info("***Pet Info Updated***");
 
 		Response resafterupdate = PetEndPoints2.UpdatePet(Payload);
 		System.out.println("\n" + "After Update Response Body= " + resafterupdate.asPrettyString());
@@ -159,18 +149,19 @@ public class ExtentReport_PetTest {
 		System.out.println("Response Time= " + resafterupdate.getTime());
 
 		// Validation 1
-		Assert.assertEquals(resafterupdate.getStatusCode(), 200);
+		Assert.assertEquals(resafterupdate.getStatusCode(), HttpStatus.OK_CODE_200.getCode());
+		
 		// Validation 2
 		Assert.assertEquals(resafterupdate.header("Content-Type"), "application/json");
-		logs.info("***Pet Info Updated***");
+		Log.info("***Pet Info Updated***");
 
 	}
 
 	@Test(priority = 3)
 	public void TestDeletePet() {
 
-		logs.info("***Deleting Pet Info***");
-		test = extent.startTest("Deleting pet user");
+		Log.info("***Deleting Pet Info***");
+		test = extent.startTest("Deleting pet user", "To verify that pet is able to deleted in system through API");
 		Response res = PetEndPoints2.DeletePet(this.Payload.getId());
 
 		System.out.println("\n" + "Delete Response Body= " + res.asPrettyString());
@@ -179,10 +170,11 @@ public class ExtentReport_PetTest {
 		System.out.println("Response Time= " + res.getTime());
 
 		// Validation 1
-		Assert.assertEquals(res.getStatusCode(), 200);
+		Assert.assertEquals(res.getStatusCode(), HttpStatus.OK_CODE_200.getCode());
+		
 		// Validation 2
 		Assert.assertEquals(res.header("Content-Type"), "application/json");
-		logs.info("***Pet Info Deleted***");
+		Log.info("***Pet Info Deleted***");
 	}
 
 	@AfterMethod

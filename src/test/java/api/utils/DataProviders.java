@@ -11,7 +11,7 @@ public class DataProviders {
 
 	@DataProvider(name = "Data")
 	public String[][] getAlldata() throws IOException {
-		String path = System.getProperty("user.dir") + "//TestData//PetData.xlsx";
+		String path = System.getProperty("user.dir") + "/Resources/PetData.xlsx";
 		ExcelUtility xl = new ExcelUtility(path);
 
 		int rowNum = xl.getRowCount("sheet1");
@@ -29,7 +29,7 @@ public class DataProviders {
 
 	@DataProvider(name = "PetID")
 	public Integer[] getPetIDs() throws IOException {
-		String path = System.getProperty("user.dir") + "//TestData//PetData.xlsx";
+		String path = System.getProperty("user.dir") + "/Resources/PetData.xlsx";
 		ExcelUtility xl = new ExcelUtility(path);
 		int rowNum = xl.getRowCount("sheet1");
 		System.out.println("total row ::"+ rowNum);
@@ -52,7 +52,7 @@ public class DataProviders {
 	
 	@DataProvider(name = "PetName")
 	public static String[] getPetNames() throws IOException {
-		String path = System.getProperty("user.dir") + "//TestData//PetData.xlsx";
+		String path = System.getProperty("user.dir") + "/Resources/PetData.xlsx";
 		ExcelUtility xl = new ExcelUtility(path);
 		int rowNum = xl.getRowCount("sheet1");
 		String data[] = new String[rowNum];
@@ -63,7 +63,10 @@ public class DataProviders {
 		return data;
 	}
 	
-	/*
-	 * public static void main(String args[]) throws IOException { getPetIDs(); }
-	 */
+	
+//	 public static void main(String args[]) throws IOException 
+//	 { 
+//		 getPetIDs(); 
+//	 }
+	 
 }

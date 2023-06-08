@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="CGM_Suite">
+<suite name="CGM_TestNG_Suite">
 	<listeners>
 		<!-- Generate listeners reports-->
 		<listener class-name="api.listeners.Listeners" /> 
+		<listener class-name="api.listeners.AnnotationTransformer" /> 
 	</listeners>
+	
 	<test thread-count="5" name="CGM_API_Test">
-		
 		<classes>
 			<class name="api.demo.tests.SparkReport_PetTest" />
 			<class name="api.demo.tests.ExtentReport_PetTest" />
-			<class name="api.demo.tests.PetTest" />
 		</classes>
 	</test> <!-- CGM_API_Test -->
-</suite> <!-- CGM_Suite -->
+</suite> <!-- CGM_TestNG_Suite -->
